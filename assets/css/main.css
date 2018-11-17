@@ -1,0 +1,30 @@
+img {
+    width: 400px;
+    height: auto;
+}
+
+.jumbotron{
+    background: url('../img/hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 50vh;
+}
+
+.jumbotron h1 {
+    margin-left: 10%;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
+
+.active {
+    color: green;
+}
+
+/* Image CSS */
+
+.lake-thumb {
+    margin: 0 0 10%;
+}
+

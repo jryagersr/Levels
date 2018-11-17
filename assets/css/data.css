@@ -1,0 +1,51 @@
+.table-fixed thead {
+    width: 97%;
+  }
+  .table-fixed tbody {
+    height: 230px;
+    overflow-y: auto;
+    width: 100%;
+  }
+  .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+  }
+  .table-fixed tbody td, .table-fixed thead > tr> th {
+    float: left;
+    border-bottom-width: 0;
+  }
+
+/* Responsive Font Sizing   */
+
+@media only screen and (max-width: 768px) {
+    .jumbotron {
+      background-size: 100% auto contain;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    th {
+        font-size: 15px;
+    }
+    
+    td {
+        font-size: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+
+  .jumbotron {
+    background-size: contain;
+  }
+  
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
