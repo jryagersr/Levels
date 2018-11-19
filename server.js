@@ -87,10 +87,8 @@ function getData(col, lakeName, indexes, newUrl, callback) {
             if (splitLine.length === col && !isNaN(parseInt(line.substring(0, 2)))) {
                 // Loop through each cell and check for missing data
                 for (var i = 0; i < splitLine.length; i++) {
-                    if(splitLine[i].substring(0,1) === "?" || splitLine[i] === -99) {
-                        console.log(splitLine[i].substring(0,1))
+                    if(splitLine[i].substring(0,1) === "?" || splitLine[i] == -99) {
                         splitLine[i] = "N/A";
-                        console.log(splitLine[i]);
                     }
                 }
                 // Push each line into data object
@@ -104,11 +102,17 @@ function getData(col, lakeName, indexes, newUrl, callback) {
                 });
             }
         });
+        // Check to see if current level is not available yet
+        // If unavailable, use previous level
+        if (data[data.length-1].level === "N/A") {
+            data.currentLevel = data[data.length-2].level;
+        }
+        else {
+            data.currentLevel = data[data.length-1].level;
+        }
         callback(null, data);
     });
 }
-
-
 
 app.get("/", function (request, response) {
     response.render("index");
