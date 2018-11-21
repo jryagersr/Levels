@@ -91,10 +91,12 @@ function getData(col, lakeName, indexes, newUrl, callback) {
                         splitLine[i] = "N/A";
                     }
                 }
+                // Formulate the date to remove Month
+                let cleanDate = splitLine[indexes[0]].substring(0,2) + " " + splitLine[indexes[0]].substring(2,5);
                 // Push each line into data object
                 data.push({
                     lakeName: lakeName,
-                    date: splitLine[indexes[0]],
+                    date: cleanDate,
                     time: splitLine[indexes[1]],
                     inflow: splitLine[indexes[2]],
                     outflow: splitLine[indexes[3]],
@@ -106,9 +108,13 @@ function getData(col, lakeName, indexes, newUrl, callback) {
         // If unavailable, use previous level
         if (data[data.length-1].level === "N/A") {
             data.currentLevel = data[data.length-2].level;
+            data.currentDate = data[data.length-2].date;
+            data.currentTime = data[data.length-2].time;
         }
         else {
             data.currentLevel = data[data.length-1].level;
+            data.currentDate = data[data.length-1].date;
+            data.currentTime = data[data.length-1].time;
         }
         callback(null, data);
     });
