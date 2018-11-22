@@ -23,7 +23,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="/">Levels</a>
+        <a class="navbar-brand" href="/">BassSavvy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,7 +48,7 @@
 
     <div class="container-fluid text-center">
         <h1 class="text-center">{data[0].lakeName} Lake</h1>
-        <h2><b>{data.currentLevel} ft.</b></h2>
+        <h2 id="currentLevel"><b>{data.currentLevel} ft.</b></h2>
         <p>As of {data.currentDate} at {data.currentTime}</p>
         <br>
         <table class="table thead-dark table-striped mx-auto">
@@ -80,6 +80,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="../assets/main.js"></script>
 </body>
 
 </html>

@@ -42,3 +42,13 @@ img {
     margin: 0 0 10%;
 }
 
+
+/* Classes to modify old or current data */
+.data-old {
+    color: red;
+}
+
+.data-current {
+    color: black;
+}
+
