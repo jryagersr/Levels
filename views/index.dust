@@ -43,21 +43,17 @@
 
     <div class="container text-center">
         <br>
-        <h2>Click on a Lake below to view its data!</h2>
+        <h2>Click on a Lake below to view water Levels!</h2>
         <hr>
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <p>Kerr Lake</p>
-                <a href="/kerr"><img class="img-fluid lake-thumb" src="/img/kerr-lake.jpg"></a>
+                <a href="/kerr"><img class="img-fluid lake-thumb" src="/img/kerr-lake.gif"></a>
             </div>
             <div class="col-lg-6 col-md-12">
-                <p>Falls Lake</p>
-                <a href="/falls"><img class="img-fluid lake-thumb" src="/img/falls-lake.jpg"></a>
+                <a href="/falls"><img class="img-fluid lake-thumb" src="/img/falls-lake.gif"></a>
             </div>
             <div class="col-lg-6 col-md-12">
-                <p>Jordan Lake</p>
-                <a href="/jordan"><img class="img-fluid lake-thumb" src="/img/jordan-lake.jpg"></a>
-            </div>
+                <a href="/jordan"><img class="img-fluid lake-thumb" src="/img/jordan-lake.gif"></a>
         </div>
     </div>
 
