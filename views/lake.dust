@@ -52,8 +52,8 @@
     <div class="container-fluid text-center">
         <h1 class="text-center">{data[0].lakeName} Lake</h1>
         <h2 id="currentLevel"><b>{data.currentLevel} ft.</b></h2>
+        <h5 id="currentLeveldelta"><b>{data.currentLevelDelta} ft delta.</b></h5>
         <p>As of {data.currentDate} at {data.currentTime}</p>
-        <h2 id="currentLeveldelta"><b>{data.currentLevelDelta} ft.</b></h2>
         <br>
         <table class="table thead-dark table-striped mx-auto">
             <thead>

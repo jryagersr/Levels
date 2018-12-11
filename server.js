@@ -43,6 +43,9 @@ app.get("/tournaments", function (request, response) {
                     date: splitLine[indexes[2]],
                     lake: splitLine[indexes[3]],
                     ramp: splitLine[indexes[4]],
+                    state: splitLine[indexes[5]],
+                    txDetail: splitLine[indexes[6]],
+                    results: splitLine[indexes[7]],
                 });
         });
 
