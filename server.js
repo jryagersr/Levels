@@ -8,6 +8,9 @@ var express = require("express"),
 
 var port = process.env.PORT || 8080;
 
+var fs = require('fs');
+var txData = [];
+
 app.engine("dust", consolidate.dust);
 app.set("template_engine", "dust");
 app.set("views", __dirname + '/views');
@@ -20,11 +23,37 @@ app.listen(port, function () {
 });
 
 
+app.get("/tournaments", function (request, response) {
+
+ 
+    var contents = fs.readFileSync('TournamentList.txt', 'ascii');
+    
+    var indexes = [0,1,2,3,4]
+
+   _.each(contents.split("\n"), function (line) {
+            // Split the text body into readable lines
+            var splitLine;
+            line = line.trim();
+            splitLine = line.split(/[\t]+/);
+
+                // Push each line into txData object
+                txData.push({
+                    organizer: splitLine[indexes[0]],
+                    trail: splitLine[indexes[1]],
+                    date: splitLine[indexes[2]],
+                    lake: splitLine[indexes[3]],
+                    ramp: splitLine[indexes[4]],
+                });
+        });
+
+    response.render("tournaments",{txData: txData});
+});
 
 app.get("/kerr", function (request, response) {
     var url = "http://epec.saw.usace.army.mil/dsskerr.txt";
     var indexes = [0,1,2,3,4]
-    getData(10, "Kerr", indexes, url, function(error, data) {
+    let kerrPool = 300.0;
+    getData(10, "Kerr", indexes, kerrPool, url, function(error, data) {
         if (error) {
             response.send(error);
             return;
@@ -38,7 +67,8 @@ app.get("/kerr", function (request, response) {
 app.get("/falls", function (request, response) {
     var url = "http://epec.saw.usace.army.mil/dssfalls.txt";
     var indexes = [0,1,"N/A","N/A",10]
-    getData(11, "Falls", indexes, url, function(error, data) {
+    let fallsPool = 252.0;
+    getData(11, "Falls", indexes, fallsPool, url, function(error, data) {
         if (error) {
             response.send(error);
             return;
@@ -52,7 +82,8 @@ app.get("/falls", function (request, response) {
 app.get("/jordan", function (request, response) {
     var url = "http://epec.saw.usace.army.mil/dssjord.txt";
     var indexes = [0,1,8,9,10]
-    getData(11, "Jordan", indexes, url, function(error, data) {
+    let jordanPool = 216.5;
+    getData(11, "Jordan", indexes, jordanPool, url, function(error, data) {
         if (error) {
             response.send(error);
             return;
@@ -67,7 +98,7 @@ app.get("/jordan", function (request, response) {
 
 
 // Functions to pull data
-function getData(col, lakeName, indexes, newUrl, callback) {
+function getData(col, lakeName, indexes,  pool, newUrl, callback) {
     var data = [];
 
     var options = {
@@ -106,15 +137,19 @@ function getData(col, lakeName, indexes, newUrl, callback) {
         });
         // Check to see if current level is not available yet
         // If unavailable, use previous level
-        if (data[data.length-1].level === "N/A") {
-            data.currentLevel = data[data.length-2].level;
-            data.currentDate = data[data.length-2].date;
-            data.currentTime = data[data.length-2].time;
-        }
-        else {
-            data.currentLevel = data[data.length-1].level;
-            data.currentDate = data[data.length-1].date;
-            data.currentTime = data[data.length-1].time;
+        let i = 1;
+        data.currentLevel = data[data.length-i].level;
+        data.currentDate = data[data.length-i].date;
+        data.currentTime = data[data.length-i].time;
+        data.currentLevelDelta = (parseFloat(data[data.length-i].level) - pool).toFixed(2);
+        while (data.currentLevel === "N/A" && i <= data.length) {
+            if (data[data.length-i].level === "N/A") {
+                i++;
+                data.currentLevel = data[data.length-i].level;
+                data.currentDate = data[data.length-i].date;
+                data.currentTime = data[data.length-i].time;
+                data.currentLevelDelta = (parseFloat(data[data.length-i].level) - pool).toFixed(2);
+            }          
         }
         callback(null, data);
     });

@@ -18,9 +18,9 @@ img {
 }
 
 .jumbotron{
-    background: url('../img/hero.jpg') no-repeat center center;
+    background: url('../img/bass1.gif') no-repeat center center;
     background-size: cover;
-    color: white;
+    color: red;
     height: 50vh;
 }
 
