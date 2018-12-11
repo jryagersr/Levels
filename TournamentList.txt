@@ -1,0 +1,191 @@
+CATT		Lake Hartwell		18-11/03		Hartwell		Broyles			SC	Qualifier 1				https://www.CATTteamtrail.com/news/tournament-results-hartwell-nov-3-2018-king-bloomfield-win/
+CATT		Clarks Hill		18-11/18		Clarks Hill		Wildwood		SC	Qualifier 1				https://www.cattteamtrail.com/divisions/catt-clarks-hill/
+CATT		Lake Hartwell		18-12/01		Hartwell		Broyles			SC	Qualifier 2
+CATT		Clarks Hill		18-12/09		Clarks Hill		Wildwood		SC	Qualifier 2				https://www.cattteamtrail.com/divisions/catt-clarks-hill/
+CATT		Robinson		18-12/15		Robinson		Easterling		SC	Qualifier 1
+CATT		Lake Hartwell		18-12/22		Hartwell		Broyles			SC	Qualifier 3
+CATT		Savannah River		18-12/29		Savannah Rvr		Hardeeville		SC	Qualifier 1
+CATT		Sparkleberry		18-12/29		Swamp			Packs			SC	Qualifier 1
+CATT		Lake Hartwell		19-01/05		Hartwell		Broyles			SC	Qualifier 4
+CATT		Robinson		19-01/05		Robinson		Easterling		SC	Qualifier 2
+CATT		Robinson		19-01/12		Robinson		Easterling		SC	Qualifier 3	
+CATT		Clarks Hill		19-01/13		Clarks Hill		Wildwood		SC	Qualifier 3				https://www.cattteamtrail.com/divisions/catt-clarks-hill/
+CATT		Hickory			19-01/19		Hickory			Whittenburg		NC	Qualifier 1
+CATT		Savannah River		19-01/19		Savannah Rvr		Stokes Bluff		SC	Qualifier 2
+CATT		Robinson		19-01/19		Robinson		Easterling		SC	Qualifier 4
+CATT		Sparkleberry		19-01/19		Swamp			Packs			SC	Qualifier 2
+CATT		Lake Hartwell		19-01/26		Hartwell		Broyles			SC	Final
+CATT		Coastal (SC)		19-01/26		Waccamaw Rvr		Bucksport		SC	Qualifier 1
+CATT		Robinson		19-01/26		Robinson		Easterling		SC	Final
+CATT		Clarks Hill		19-01/27		Clarks Hill		Wildwood		SC	Qualifier 4				https://www.cattteamtrail.com/divisions/catt-clarks-hill/
+CATT		Lake Wylie		19-02/02		Wylie			Buster Boyd		SC	Qualifier 1
+CBC		SC			19-02/02		Waccamaw Rvr		Bucksport		SC	CBC
+CATT		Kerr Lake		19-02/09		Kerr			Occonneechee		NC	Qualifier 1
+CATT		Yadkin			19-02/09		Tillery			Swift Island		NC	Qualifier 1
+CATT		Norman			19-02/09		Norman			Pinnacle		NC	Qualifier 1
+CATT		Santee Cooper		19-02/09		Santee Cooper		John C Land		SC	Qualifier 1
+CATT		Wateree Open		19-02/09		Wateree			Clearwater		SC	Open 1
+CATT		Clarks Hill		19-02/10		Clarks Hill		Wildwood		SC	Final					https://www.cattteamtrail.com/divisions/catt-clarks-hill/
+CBC		NC			19-02/16		Norman			Pinnacle?		NC	CBC NC
+CATT		Santee Cooper		19-02/16		Santee Cooper		John C Land		SC	Qualifier 2
+CATT		Wateree			19-02/16		Wateree			Clearwater		SC	Qualifier 1
+CATT		Savannah River		19-02/16		Savannah Rvr		Hardeeville		SC	Qualifier 3
+CATT		Coastal (SC)		19-02/16		Cooper Rvr		Cypress Gardens		SC	Qualifier 2
+BFL		S Carolina		19-02/16		Hartwell		Green Pond		SC	FLW
+CATT		Sparkleberry		19-02/17		Swamp			Packs			SC	Qualifier 3
+PBC		Cashion			19-02/23		Jordan			Farrington		NC	Piedmont Bass Classic
+CATT		Santee Cooper		19-02/23		Santee Cooper		John C Land		SC	Gold 3
+CATT		Wateree			19-02/23		Wateree			Clearwater		SC	Qualifier 2
+CATT		Wateree Open		19-02/23		Wateree			Clearwater		SC	Open 2
+CATT		Cooper River		19-02/23		Cooper Rvr		Cypress Gardens		SC	Qualifier 1
+CATT		Kerr Lake		19-02/24		Kerr			Occonneechee		NC	Qualifier 2
+CATT		Norman			19-02/??		Norman			Pinnacle		NC	Qualifier 2
+PBC		Spring Team		19-03/02		Jordan			Farrington		NC	Piedmont Bass Classic
+CBC		SC			19-03/02		Santee Cooper		John C Land		SC	CBC SC
+CATT		Wateree			19-03/02		Wateree			Clearwater		SC	Qualifier 3
+CATT		Sparkleberry		19-03/03		Swamp			Packs			SC	Qualifier 4
+CATT		Old North		19-03/09		Kerr			Flemington		NC	Gold 1
+CATT		Yadkin			19-03/02		Badin			Alcoa			NC	Qualifier 2
+PBC		Cashion			19-03/09		Falls			Ledge Rock		NC	Piedmont Bass Classic
+CATT		Wateree			19-03/09		Wateree			Clearwater		SC	Qualifier 4
+CATT		Wateree Open		19-03/09		Wateree			Clearwater		SC	Open 3
+CATT		Savannah River		19-03/09		Savannah Rvr		Hardeeville		SC	Qualifier 4
+CATT		Cooper River		19-03/09		Cooper Rvr		Cypress Gardens		SC	Qualifier 2
+BFL		S Carolina		19-03/09		Santee Cooper		John C Land		SC	FLW
+PBC		Spring Team		19-03/16		Falls			Ledge Rock		NC	Piedmont Bass Classic
+Anglers		Team Trail		19-03/16		Smith Mountain		Parkway			VA	Anglers Choice
+CATT		Lake Wylie		19-03/16		Wylie			Buster Boyd		SC	Qualifier 2
+CBC		NC			19-03/16		James			Black Bear		NC	CBC NC
+CATT		Wateree			19-03/16		Wateree			Clearwater		SC	Qualifier 5
+CATT		Coastal (SC)		19-03/16		Waccamaw Rvr		Bucksport		SC	Qualifier 3
+CATT		Sparkleberry		19-03/16		Swamp			Packs			SC	Final
+CATT		Kerr Lake		19-03/17		Kerr			Occonneechee		NC	Gold 3
+CATT		Old North		19-03/23		Falls			Ledge Rock		NC	Gold 2
+PBC		Cashion			19-03/23		Harris			Crosspointe		NC	Piedmont Bass Classic
+CATT		Yadkin			19-03/23		High Rock		Tamarac			NC	Qualifier 3
+CATT		Santee Cooper		19-03/23		Santee Cooper		John C Land		SC	Gold 4
+CATT		Wateree			19-03/23		Wateree			Clearwater		SC	Qualifier 6
+CATT		Wateree Open		19-03/23		Wateree			Clearwater		SC	Open 4
+CATT		East (NC)		19-03/23		Albemarle		Lighthouse Landing	NC	Gold 1
+CATT		James River		19-03/23		James Rvr		Riverfront		VA	Gold
+CATT		Cooper River		19-03/23		Cooper Rvr		Cypress Gardens		SC	Qualifier 3
+Collins 	BFCS			19-03/30		Jordan			Farrington		NC	Bass For Cash Series
+PBC		Spring Team		19-03/30		Harris			Crosspointe		NC	Piedmont Bass Classic
+CATT		Lake Wylie		19-03/30		Wylie			Buster Boyd		SC	Qualifier 3
+CBC		SC			19-03/30		Murray			Dreher Island		SC	CBC NC
+CATT		Santee Cooper		19-03/30		Santee Cooper		John C Land		SC	Qualifier 5
+BFL		S Carolina		19-03/30		Clarks Hill		Wildwood		SC	FLW
+CATT		Kerr Lake		19-03/31		Kerr			Occonneechee		NC	Gold 4
+CATT		Wateree			19-03/30		Wateree			Clearwater		SC	Qualifier 7
+CATT		Wateree Open		19-03/30		Wateree			Clearwater		SC	Open 5
+CATT		Norman			19-03/??		Norman			Pinnacle		NC	Qualifier 3
+CATT		Norman			19-03/??		Norman			Pinnacle		NC	Qualifier 4
+CATT		Hickory			19-03/??		Hickory			Whittenburg		NC	Qualifier 2
+CATT		Old North		19-04/06		Harris			Crosspointe		NC	Gold 3
+PBC		Cashion			19-04/06		Jordan			Farrington		NC	Piedmont Bass Classic
+Anglers		Team Trail		19-04/06		Kerr			Occonneechee		VA	Anglers Choice
+CATT		Yadkin			19-04/06		Tuckertown		Flat Rock		NC	Qualifier 4
+CATT		Wateree			19-04/06		Wateree			Clearwater		SC	Qualifier 8
+CATT		Wateree Open		19-04/06		Wateree			Clearwater		SC	Open 6
+CATT		Cooper River		19-04/06		Cooper Rvr		Cypress Gardens		SC	Qualifier 4
+BFL		Shenandoah		19-04/06		Kerr			Nutbush			NC	FLW
+CATT		Lake Wylie		19-04/13		Wylie			Buster Boyd		SC	Qualifier 4
+CATT		Savannah River		19-04/20		Savannah Rvr		Stokes Bluff		SC	Final
+Anglers		Team Trail		19-04/07		Kerr			Occonneechee		VA	Anglers Choice
+PBC		Spring Team		19-04/13		Jordan			Farrington		NC	Piedmont Bass Classic
+CATT		Santee Cooper		19-04/13		Santee Cooper		John C Land		SC	Qualifier 6
+CATT		Wateree			19-04/13		Wateree			Clearwater		SC	Final
+CATT		Wateree Open		19-04/13		Wateree			Clearwater		SC	Open 7
+BFL		Piedmont		19-04/13		Kerr			Nutbush			NC	FLW
+CATT		Kerr Lake		19-04/14		Kerr			Occonneechee		NC	Qualifier 5
+CATT		East (NC)		19-04/13		Albemarle		Lighthouse Landing	NC	Gold 2
+Collins 	BFCS			19-04/20		Kerr			Nutbush			NC	Combined Boys & Girls Club
+CBC		NC			19-04/20		Hickory			Whittenburg		NC	Bass For Cash Series
+CATT		Coastal (SC)		19-04/20		Waccamaw Rvr		Bucksport		SC	Qualifier 4
+CATT		Cooper River		19-04/20		Cooper Rvr		Cypress Gardens		SC	Qualifier 5
+PBC		Spring Team		19-04/27		Kerr			Flemington		NC	Piedmont Bass Classic
+CATT		Lake Wylie		19-04/27		Wylie			Buster Boyd		SC	Qualifier 5
+CBC		SC			19-04/27		Wateree			Clearwater		SC	CBC SC
+CATT		Coastal (SC)		19-04/27		Waccamaw Rvr		Bucksport		SC	Final
+CATT		James River		19-04/27		James Rvr		Osborne			VA	Gold
+CATT		Old North		19-04/28		Jordan			Farrington		NC	Gold 4
+CATT		Kerr Lake		19-04/28		Kerr			Occonneechee		NC	Final
+CATT		Norman			19-04/??		Norman			Pinnacle		NC	Qualifier 5
+CATT		Norman			19-04/??		Norman			Pinnacle		NC	Qualifier 6
+CATT		Hickory			19-04/??		Hickory			Whittenburg		NC	Qualifier 3
+CBC		NC			19-05/04		Kerr			Nutbush			NC	CBC NC
+Collins 	BFCS			19-05/04		Gaston			Summit			NC	Bass For Cash Series
+PBC		Cashion			19-05/04		Kerr			Flemington		NC	Piedmont Bass Classic
+Anglers		Team Trail		19-05/04		Smith Mountain		Parkway			VA	Anglers Choice
+CATT		Santee Cooper		19-05/04		Santee Cooper		John C Land		SC	Qualifier 7
+CATT		Cooper River		19-05/04		Cooper Rvr		Cypress Gardens		SC	Final
+PBC		Spring Team		19-05/11		Jordan			Farrington		NC	Piedmont Bass Classic
+CATT		Lake Wylie		19-05/11		Wylie			Buster Boyd		SC	Final
+CATT		Santee Cooper		19-05/11		Santee Cooper		John C Land		SC	Final
+CATT		Wateree Open		19-05/11		Wateree			Clearwater		SC	Open 8
+CATT		Hickory			19-05/11		Hickory			Whittenburg		NC	Qualifier 4
+CATT		East (NC)		19-05/11		Albemarle		Lighthouse Landing	NC	Gold 3
+CATT		James River		19-05/11		James Rvr		Riverfront		VA	Gold
+BFL		Piedmont		19-05/11		Smith Mountain		Parkway			VA	FLW
+CATT		Old North		19-05/18		Jordan			Farrington		NC	Gold 5
+CATT		Yadkin			19-05/18		High Rock		Tamarac			NC	Qualifier 5
+CATT		Waccamaw		19-05/18		Waccamaw Rvr		Bucksport		SC	Qualifier 1
+BFL		S Carolina		19-05/18		Wylie			Buster Boyds		SC	FLW
+CATT		Yadkin			19-05/25		Tuckertown		Flat Rock		NC	Qualifier 6
+CATT		Norman			19-05/25		Norman			Pinnacle		NC	Qualifier 8
+CATT		Wateree Open		19-05/25		Wateree			Clearwater		SC	Open 9
+CATT		Norman			19-05/??		Norman			Pinnacle		NC	Qualifier 7
+CATT 		NC/SC Championship	19-06/01		Kerr			Nutbush			NC	Academy Sports 2-Day CATT Championship
+CATT		Wateree Open		19-06/01		Wateree			Clearwater		SC	Open 10
+PBC		Spring Team		19-06/01		Falls			Ledge Rock		NC	Piedmont Bass Classic
+CATT		Yadkin			19-06/01		High Rock		Tamarac			NC	Final
+CATT		Hickory			19-06/01		Hickory			Whittenburg		NC	Qualifier 5
+CATT		Old North		19-06/08		Kerr			Flemington		NC	Gold 6
+Anglers		Team Trail		19-06/08		Kerr			Occonneechee		VA	Anglers Choice
+CATT		Wateree Open		19-06/08		Wateree			Clearwater		SC	Open 11
+CATT		East (NC)		19-06/08		Albemarle		Lighthouse		NC	Gold 4
+CATT		James River		19-06/08		James Rvr		Riverfront		VA	Gold
+PBC		Spring Team		19-06/15		Jordan			Farrington		NC	Championship
+CATT		Wateree Open		19-06/15		Wateree			Clearwater		SC	Open 12
+Collins 	BFCS			19-06/22		Falls			Ledge Rock		NC	Bass For Cash Series
+CATT		Norman			19-06/22		Norman			Pinnacle		NC	Qualifier 9
+CATT		Wateree Open		19-06/22		Wateree			Clearwater		SC	Open 13
+CATT		Waccamaw		19-06/22		Waccamaw Rvr		G-CC Landing		SC	Qualifier 2
+BFL		Piedmont		19-06/22		High Rock		Tamarac			NC	FLW
+CATT		Old North		19-06/29		Jordan			Farrington		NC	Final
+BFL		Shenandoah		19-06/29		Smith Mountain		Parkway			VA	FLW
+CATT		Hickory			19-07/13		Hickory			Whittenburg		NC	Qualifier 6
+CATT		East (NC)		19-07/13		Albemarle		Lighthouse 		NC	Gold 5
+CATT		James River		19-07/13		James Rvr		Riverfront		VA	Gold
+CATT		Waccamaw		19-07/13		Waccamaw Rvr		Bucksport		SC	Gold 3
+BFL		Piedmont		19-07/13		James River		Osborne			VA	FLW
+CATT		Norman			19-07/20		Norman			Pinnacle		NC	Qualifier 10
+CATT		Wateree Open		19-07/20		Wateree			Clearwater		SC	Open 14
+CATT		Waccamaw		19-07/20		Waccamaw Rvr		Bucksport		SC	Gold 4
+Collins 	BFCS			19-07/27		Roanoke 		Plymouth		NC	Bass For Cash Series
+BFL		Shenandoah		19-07/27		Potomac			Smallwood		VA	FLW
+CATT		Waccamaw		19-08/03		Waccamaw Rvr		Bucksport		SC	Qualifier 5
+Collins 	BFCS			19-08/10		Cypress Landing		Pembroke		NC	Bass For Cash Series
+CATT		Wateree Open		19-08/10		Wateree			Clearwater		SC	Open 15
+CATT		James River		19-08/10		James Rvr		Riverfront		VA	Gold
+CATT		Hickory			19-08/17		Hickory			Whittenburg		NC	Qualifier 7
+CATT		Waccamaw		19-08/17		Waccamaw Rvr		Bucksport		SC	Final
+BFL		Shenandoah		19-08/17		Potomac			Smallwood		VA	FLW
+CATT		East (NC)		19-08/24		Albemarle		Lighthouse		NC	Gold 6
+CATT		Norman			19-08/31		Norman			Pinnacle		NC	Qualifier 11
+BFL		Piedmont		19-09/07		Smith Mountain		Parkway			VA	Bass For Cash Series
+Collins 	BFCS			19-09/14		TBD			TBD			NC	Super 2-Day
+CATT		Hickory			19-09/14		Hickory			Whittenburg		NC	Final
+CATT		James River		19-09/14		James River		Riverfront		VA	Gold
+CATT		Norman			19-09/21		Norman			Pinnacle		NC	Final
+BFL		Shenandoah		19-09/14		James River		Osborne			VA	FLW
+CATT		East (NC)		19-09/21		Albemarle		Lighthouse		NC	Gold 7
+CATT		Wateree Open		19-09/28		Wateree			Clearwater		SC	Open 16
+BFL		S Carolina		19-09/28		Hartwell		Green Pond		SC	FLW
+CATT		James River		19-10/05		James Rvr		Osborne			VA	Final 2-Day
+Anglers		Team Trail		19-10/12		Kerr			Occonneechee		VA	2-Day Classic
+CATT		Wateree Open		19-10/12		Wateree			Clearwater		SC	Open 17
+CATT		Wateree Open		19-10/19		Wateree			Clearwater		SC	Open 18
+CATT		East (NC)		19-10/19		Albemarle		Lighthouse		NC	Final
+CATT		Wateree Open		19-11/09		Wateree			Clearwater		SC	Open 19
+CATT		Wateree Open		19-11/16		Wateree			Clearwater		SC	Final
