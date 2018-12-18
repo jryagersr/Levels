@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>BassSavvy</title>
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="/static/assets/css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="/"><h2>Bass<span class="brand-savvy">Savvy</span></h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/lakes">Lakes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tournaments">Tournaments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid text-center">
+    <br>
+    <p id="sponsoredLake" class=data-old> SPONSOR THE  <span class="active"><span class="lakeName" id="lakeSponsor"></span><span class=data-old> Page and get YOUR LOGO HERE! </span></span></p>
+    <div class="current-wrapper">
+      <h1 class="header-title"><span id="lakeTitle"></span></h1>
+      <h1><span id="currentLevel"></span> ft.</h1>
+      <p class="current-subtext"><span class="delta">(<span class="delta" id="currentDelta"></span> ft.)</span></p>
+      <p class="current-subtext">as of <span id="currentDate"></span> at <span id="currentTime"></span></p>
+    </div>
+    <br>
+    <!-- <h3><span id="lakeTournaments" >Featured Tournament</h3> -->
+    <p id="sponsoredTx" class=data-old> GET YOUR <span class="active"><span class="lakeName" id="lakeFeaturedTournament"></span><span class=data-old> TOURNAMENT LISTED HERE! </span></span></p>
+    <br>
+    <table class="table thead-dark table-striped mx-auto">
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Time</th>
+          <th scope="col">Level</th>
+          <th scope="col">Flow</th>
+        </tr>
+      </thead>
+      <tbody id="lakeSection">
+      </tbody>
+    </table>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/static/assets/js/thisLake.js"></script>
+
+</body>
+
+
+</html>

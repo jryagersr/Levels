@@ -1,163 +1,53 @@
+// ==============================================================================
+// DEPENDENCIES
+// Series of npm packages that we will use to give our server useful functionality
+// ==============================================================================
 
-var express = require("express"),
-    app = express(),
-    request = require("request"),
-    _ = require("underscore"),
-    dust = require("dustjs-linkedin"),
-    consolidate = require("consolidate");
-
-var port = process.env.PORT || 8080;
-
-var fs = require('fs');
-var txData = [];
-
-app.engine("dust", consolidate.dust);
-app.set("template_engine", "dust");
-app.set("views", __dirname + '/views');
-app.set("view engine", "dust");
-app.use(express.static(__dirname + '/assets'));
-
-// Start the server
-app.listen(port, function () {
-    console.log("App running on port " + port + "!");
-});
+var express = require("express");
+var bodyParser = require("body-parser");
+var path = require("path");
+const mongoose = require("mongoose");
 
 
-app.get("/tournaments", function (request, response) {
-
- 
-    var contents = fs.readFileSync('TournamentList.txt', 'ascii');
-    
-    var indexes = [0,1,2,3,4]
-
-   _.each(contents.split("\n"), function (line) {
-            // Split the text body into readable lines
-            var splitLine;
-            line = line.trim();
-            splitLine = line.split(/[\t]+/);
-
-                // Push each line into txData object
-                txData.push({
-                    organizer: splitLine[indexes[0]],
-                    trail: splitLine[indexes[1]],
-                    date: splitLine[indexes[2]],
-                    lake: splitLine[indexes[3]],
-                    ramp: splitLine[indexes[4]],
-                    state: splitLine[indexes[5]],
-                    txDetail: splitLine[indexes[6]],
-                    results: splitLine[indexes[7]],
-                });
-        });
-
-    response.render("tournaments",{txData: txData});
-});
-
-app.get("/kerr", function (request, response) {
-    var url = "http://epec.saw.usace.army.mil/dsskerr.txt";
-    var indexes = [0,1,2,3,4]
-    let kerrPool = 300.0;
-    getData(10, "Kerr", indexes, kerrPool, url, function(error, data) {
-        if (error) {
-            response.send(error);
-            return;
-        }
-        else {
-            response.render("lake", {data: data.reverse()})
-        }
-    });
-});
-
-app.get("/falls", function (request, response) {
-    var url = "http://epec.saw.usace.army.mil/dssfalls.txt";
-    var indexes = [0,1,"N/A","N/A",10]
-    let fallsPool = 252.0;
-    getData(11, "Falls", indexes, fallsPool, url, function(error, data) {
-        if (error) {
-            response.send(error);
-            return;
-        }
-        else {
-            response.render("lake", {data: data.reverse()})
-        }
-    });
-});
-
-app.get("/jordan", function (request, response) {
-    var url = "http://epec.saw.usace.army.mil/dssjord.txt";
-    var indexes = [0,1,8,9,10]
-    let jordanPool = 216.5;
-    getData(11, "Jordan", indexes, jordanPool, url, function(error, data) {
-        if (error) {
-            response.send(error);
-            return;
-        }
-        else {
-            response.render("lake", {data: data.reverse()})
-        }
-    });
-});
+// ==============================================================================
+// EXPRESS CONFIGURATION
+// This sets up the basic properties for our express server
+// ==============================================================================
 
 
 
 
-// Functions to pull data
-function getData(col, lakeName, indexes,  pool, newUrl, callback) {
-    var data = [];
+// Tells node that we are creating an "express" server
+var app = express();
 
-    var options = {
-        url: newUrl
-    }
-    request(options, function (error, response, body) {
-        if (error) {
-            callback(error);
-        }
-        _.each(body.split("\r\n"), function (line) {
-            // Split the text body into readable lines
-            var splitLine;
-            line = line.trim();
-            splitLine = line.split(/[ ]+/);
-            // Check to see if this is a data line
-            // Column length and first two characters must match
-            if (splitLine.length === col && !isNaN(parseInt(line.substring(0, 2)))) {
-                // Loop through each cell and check for missing data
-                for (var i = 0; i < splitLine.length; i++) {
-                    if(splitLine[i].substring(0,1) === "?" || splitLine[i] == -99) {
-                        splitLine[i] = "N/A";
-                    }
-                }
-                // Formulate the date to remove Month
-                let cleanDate = splitLine[indexes[0]].substring(0,2) + " " + splitLine[indexes[0]].substring(2,5);
-                // Push each line into data object
-                data.push({
-                    lakeName: lakeName,
-                    date: cleanDate,
-                    time: splitLine[indexes[1]],
-                    inflow: splitLine[indexes[2]],
-                    outflow: splitLine[indexes[3]],
-                    level: splitLine[indexes[4]]
-                });
-            }
-        });
-        // Check to see if current level is not available yet
-        // If unavailable, use previous level
-        let i = 1;
-        data.currentLevel = data[data.length-i].level;
-        data.currentDate = data[data.length-i].date;
-        data.currentTime = data[data.length-i].time;
-        data.currentLevelDelta = (parseFloat(data[data.length-i].level) - pool).toFixed(2);
-        while (data.currentLevel === "N/A" && i <= data.length) {
-            if (data[data.length-i].level === "N/A") {
-                i++;
-                data.currentLevel = data[data.length-i].level;
-                data.currentDate = data[data.length-i].date;
-                data.currentTime = data[data.length-i].time;
-                data.currentLevelDelta = (parseFloat(data[data.length-i].level) - pool).toFixed(2);
-            }          
-        }
-        callback(null, data);
-    });
+// Sets an initial port. We"ll use this later in our listener
+var PORT = process.env.PORT || 8080;
+
+// Serve up static assets (usually on heroku)
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
 }
 
-app.get("/", function (request, response) {
-    response.render("index");
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use('/static', express.static(path.join(__dirname, 'public')))
+
+// ================================================================================
+// ROUTER
+// The below points our server to a series of "route" files.
+// These routes give our server a "map" of how to respond when users visit or request data from various URLs.
+// ================================================================================
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+// =============================================================================
+// LISTENER
+// The below code effectively "starts" our server
+// =============================================================================
+
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
 });

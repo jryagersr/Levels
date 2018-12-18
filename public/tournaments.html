@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>BassSavvy - Tournaments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="static/assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="static/assets/css/data.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="/"><h2>Bass<span class="brand-savvy">Savvy</span></h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/lakes">Lakes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/tournaments">Tournaments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container text-center">
+
+        <h1 class="header-title">Tournaments</h1>
+
+        <br>
+                <button class="btn btn-success" id="filterBtn">Filter</button>
+                <button class="btn" id="refreshBtn">Refresh</button>
+        <div id="filterWrapper">
+            <form>
+                <p class="text-left">Filter the table view:</p>
+                <div class="form-group">
+                        <select class="form-control col" id="stateSelect">
+                            <option>Select State</option>
+                            <option>GA</option>
+                            <option>NC</option>
+                            <option>SC</option>
+                            <option>VA</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                    <select class="form-control col" id="orgSelect">
+                        <option>Select Org</option>
+                        <option>Anglers</option>
+                        <option>BFL</option>
+                        <option>CATT</option>
+                        <option>CBC</option>
+                        <option>Collins</option>
+                        <option>PBC</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control col" id="locSelect">
+                        <option>Select Location</option>
+                        <option>Albemarle</option>
+                        <option>Badin</option>
+                        <option>Clarks Hill</option>
+                        <option>Cooper Rvr</option>
+                        <option>Cypress Landing </option>
+                        <option>Falls</option>
+                        <option>Gaston</option>
+                        <option>Harris</option>
+                        <option>Hartwell</option>
+                        <option>Hickory</option>
+                        <option>High Rock</option>
+                        <option>James</option>
+                        <option>James Rvr</option>
+                        <option>Jordan</option>
+                        <option>Kerr</option>
+                        <option>Murray</option>
+                        <option>Norman</option>
+                        <option>Potomac</option>
+                        <option>Roanoke</option>
+                        <option>Robinson</option>
+                        <option>Santee Cooper</option>
+                        <option>Savannah Rvr</option>
+                        <option>Smith Mountain</option>
+                        <option>Swamp</option>
+                        <option>TBD</option>
+                        <option>Tillery</option>
+                        <option>Tuckertown</option>
+                        <option>Waccamaw Rvr</option>
+                        <option>Wateree</option>
+                        <option>Wylie</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control col" id="trailSelect">
+                        <option>Select Trail</option>
+                        <option>BFCS</option>
+                        <option>Cashion</option>
+                        <option>Clarks Hill</option>
+                        <option>Coastal (SC)</option>
+                        <option>Cooper River</option>
+                        <option>East (NC)</option>
+                        <option>Hickory</option>
+                        <option>James River</option>
+                        <option>Kerr Lake</option>
+                        <option>Lake Hartwell</option>
+                        <option>Lake Wylie</option>
+                        <option>NC</option>
+                        <option>NC/SC Championship</option>
+                        <option>Norman</option>
+                        <option>Old North</option>
+                        <option>Piedmont</option>
+                        <option>Robinson</option>
+                        <option>S Carolina</option>
+                        <option>Santee Cooper</option>
+                        <option>Savannah River</option>
+                        <option>SC</option>
+                        <option>Shenandoah</option>
+                        <option>Sparkleberry</option>
+                        <option>Spring Team</option>
+                        <option>Team Trail</option>
+                        <option>Waccamaw</option>
+                        <option>Wateree</option>
+                        <option>Wateree Open</option>
+                        <option>Yadkin</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control col" id="rampSelect">
+                        <option>Select Ramp</option>
+                        <option>Alcoa</option>
+                        <option>Black Bear</option>
+                        <option>Broyles</option>
+                        <option>Bucksport</option>
+                        <option>Buster Boyd</option>
+                        <option>Clearwater</option>
+                        <option>Crosspointe</option>
+                        <option>Cypress Gardens</option>
+                        <option>Dreher Island</option>
+                        <option>Easterling</option>
+                        <option>Farrington</option>
+                        <option>Flat Rock</option>
+                        <option>Flemington</option>
+                        <option>G-CC Landing</option>
+                        <option>Green Pond</option>
+                        <option>Hardeeville</option>
+                        <option>John C Land</option>
+                        <option>Ledge Rock</option>
+                        <option>Lighthouse</option>
+                        <option>Nutbush</option>
+                        <option>Occonneechee</option>
+                        <option>Osborne</option>
+                        <option>Packs</option>
+                        <option>Parkway</option>
+                        <option>Pembroke</option>
+                        <option>Pinnacle</option>
+                        <option>Plymouth</option>
+                        <option>Roverfront</option>
+                        <option>Smallwood</option>
+                        <option>Stokes Bluff</option>
+                        <option>Summit</option>
+                        <option>Swift Island</option>
+                        <option>Tamarac</option>
+                        <option>TBD</option>
+                        <option>Whittenburg</option>
+                        <option>Wildwood</option>
+                    </select>
+                </div>
+                <button type="submit" class="col btn btn-success" id="filterSubmit">Filter</button>
+            </form>
+        </div>
+
+        <p>* Click on a table header to sort</p>
+        <div class="table-responsive text-center">
+            <table id="txTable" class="table table-fixed table-striped">
+                <thead class="sticky-top">
+                    <tr id="headerRow">
+                        <th data-header="organization" scope="col">Org</th>
+                        <th data-header="trail" scope="col">Trail</th>
+                        <th data-header="date" scope="col">Date</th>
+                        <th data-header="location" scope="col">Location</th>
+                        <th data-header="ramp" scope="col">Ramp</th>
+                    </tr>
+                </thead>
+                <tbody id="txSection">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/assets/js/tournaments.js"></script>
+</body>
+
+</html>
