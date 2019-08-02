@@ -75,7 +75,7 @@ function elevUSGS() {
                     break;
 
                 default:
-                    alert("Lake name does not exists");
+                    alert("Lake name does not exist");
             }
             // Create our increment and loop through each value
             // For each value create our associated table html
